@@ -9,12 +9,14 @@
         android:roundIcon="@drawable/iconrounded"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".cadastrar"></activity>
         <activity
             android:name=".menu"
             android:label="@string/title_activity_menu"
-            android:theme="@style/NoActionBar"></activity>
-        <activity android:name=".footer"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".footer"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".login" />
         <activity
             android:name=".splash"
@@ -25,7 +27,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -35,8 +36,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
     </application>
 
 </manifest>

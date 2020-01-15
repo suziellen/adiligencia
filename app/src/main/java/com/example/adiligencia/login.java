@@ -19,4 +19,11 @@ public class login extends AppCompatActivity {
         Intent intent = new Intent (this, footer.class);
         startActivity(intent);
     }
+
+    public void telaCadastrar (View view){
+
+        Intent intent = new Intent (this, cadastrar.class);
+        startActivity(intent);
+    }
 }
+

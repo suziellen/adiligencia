@@ -7,22 +7,21 @@
         tools:showIn="navigation_view">
         <item
             android:id="@+id/nav_home"
-            android:title="Home" />
+            android:title="Home"/>
         <item
             android:id="@+id/nav_buscar"
-            android:icon="@drawable/ic_android"
             android:title="Buscar Diligência" />
         <item
             android:id="@+id/nav_sobre"
-            android:icon="@drawable/ic_android"
             android:title="Sobre" />
         <item
             android:id="@+id/nav_minhas_diligencias"
-            android:icon="@drawable/ic_android"
-            android:title="Termos e Condições" />
+            android:title="Minhas Diligências" />
+        <item
+            android:id="@+id/nav_termos"
+            android:title="Termos e Condições"/>
         <item
             android:id="@+id/nav_sair"
-            android:icon="@drawable/ic_android"
             android:title="Sair" />
 
     </group>
