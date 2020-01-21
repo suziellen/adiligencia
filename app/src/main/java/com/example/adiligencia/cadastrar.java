@@ -29,6 +29,8 @@ public class cadastrar extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                BancoController crud = new BancoController(getBaseContext());
+
                 EditText nome = (EditText)findViewById(R.id.nome);
                 EditText email = (EditText)findViewById(R.id.email);
                 EditText senha = (EditText)findViewById(R.id.senha);
@@ -38,6 +40,7 @@ public class cadastrar extends AppCompatActivity {
                 String emailString = email.getText().toString();
                 String senhaString = senha.getText().toString();
                 String senhaConfereString = senhaConfere.getText().toString();
+
 
                 if(nomeString.isEmpty() || emailString.isEmpty() || senhaString.isEmpty() || senhaConfereString.isEmpty()) {
 
@@ -50,11 +53,14 @@ public class cadastrar extends AppCompatActivity {
                 }else{
                     if(senhaString.equals(senhaConfereString)){
 
-                       String resultado = "cadastrou";
+                      /*String resultado = "cadastrou";
                        Toast toast = Toast.makeText(getApplicationContext(),
-                               resultado, Toast.LENGTH_SHORT);
+                             resultado, Toast.LENGTH_SHORT);
                        toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL, 0, 0);
-                       toast.show();
+                       toast.show();*/
+                        String resultado  = crud.insereDado(nomeString,emailString,senhaString);
+
+                       Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_LONG).show();
 
                     }else{
 

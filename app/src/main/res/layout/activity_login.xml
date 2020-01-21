@@ -15,14 +15,14 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintBottom_toTopOf="@+id/emaillogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/emaillogin"
         android:layout_width="322dp"
         android:layout_height="49dp"
         android:layout_marginStart="35dp"
@@ -37,13 +37,13 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintBottom_toTopOf="@+id/senhalogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/senhalogin"
         android:layout_width="322dp"
         android:layout_height="49dp"
         android:layout_marginStart="35dp"
@@ -62,7 +62,7 @@
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/emaillogin" />
 
     <Button
         android:id="@+id/angry_btn"
@@ -77,7 +77,7 @@
         android:background="@drawable/buttonshape"
         android:drawableLeft="@android:drawable/ic_menu_set_as"
         android:drawablePadding="1dp"
-        android:onClick="telaFooter"
+        android:onClick="login"
         android:paddingLeft="75dp"
         android:paddingRight="75dp"
         android:shadowColor="#FFFFFF"
@@ -189,6 +189,6 @@
         app:layout_constraintBottom_toTopOf="@+id/angry_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/senhalogin"
         app:layout_constraintVertical_bias="0.944" />
 </androidx.constraintlayout.widget.ConstraintLayout>
