@@ -58,7 +58,8 @@ public class cadastrar extends AppCompatActivity {
                              resultado, Toast.LENGTH_SHORT);
                        toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL, 0, 0);
                        toast.show();*/
-                        String resultado  = crud.insereDado(nomeString,emailString,senhaString);
+                        String resultado  = crud
+                                 .insereDado(nomeString,emailString,senhaString);
 
                        Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_LONG).show();
 

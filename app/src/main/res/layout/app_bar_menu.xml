@@ -59,13 +59,13 @@
                 android:id="@+id/editText3"
                 android:layout_width="250dp"
                 android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
                 android:layout_marginTop="15dp"
                 android:background="#B22222"
-                android:layout_marginLeft="15dp"
                 android:drawableLeft="@drawable/icon_lupa"
                 android:drawablePadding="10dp"
                 android:ems="10"
-                android:hint="São Paulo"
+                android:hint="São Leopoldo"
                 android:inputType="textPersonName"
                 android:textColor="#FFFFFF"
                 android:textColorHint="#FFFFFF"
@@ -92,13 +92,13 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+  <!--  <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+-->
     <include layout="@layout/content_menu" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
